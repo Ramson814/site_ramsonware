@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place%%order%%now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+     <!-- navigation section -->
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand">RAMSONWARE</a>
+            <Button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </Button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="https://www.cpage.co.tz/" class="nav-link">Printing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">why choose</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">What your Quotes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <!-- View -->
+ <div class="container py-4 table-responsive">
+   <table class="table table-striped">
+    <thead>
+        <h1 class="text-primary py-5">Details Available</h1>
+        <tr class="table-active">
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Color</th>
+            <th>Copies</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Approval</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>142526</td>
+            <td>Ramson</td>
+            <td>Mapela</td>
+            <td>Binding</td>
+            <td>Nothing</td>
+            <td>CIVE</td>
+            <td>COLORED</td>
+            <td>3</td>
+            <td>0655549826</td>
+            <td><button class="btn btn-danger">Verified</button></td>
+            <td><button class="btn btn-primary">Approve</button></td>
+        </tr>
+        <tr>
+            <td>252526</td>
+            <td>Jeffrey</td>
+            <td>hamza</td>
+            <td>Binding</td>
+            <td>Nothing</td>
+            <td>CIVE</td>
+            <td>BLACK$WHITE</td>
+            <td>4</td>
+            <td>0655549826</td>
+            <td><button class="btn btn-danger">Verified</button></td>
+            <td><button class="btn btn-primary">Approve</button></td>
+        </tr>
+        <tr>
+            <td>142526</td>
+            <td>Halima</td>
+            <td>Msoffe</td>
+            <td>Binding</td>
+            <td>Nothing</td>
+            <td>TIBA</td>
+            <td>COLORED</td>
+            <td>7</td>
+            <td>0655549826</td>
+            <td class="text-success">checked</td>
+            <td><button class="btn btn-primary">Approve</button></td>
+        </tr>
+    </tbody>
+   </table>
+     
+    </div>
+
+    <form action='stationaryView.jsp' method='get'>
+        
+    </form>
+ 
+    </body>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    
+<script>
+    function generateRandomNumber() {
+        // Generate a unique six-digit random number
+        var randomNum = Math.floor(100000 + Math.random() * 900000);
+        
+        // Display the generated number
+         document.getElementById("randomNumber").value = randomNum;
+         document.getElementById("randomNumber1").textContent = randomNum;
+    }
+</script>
+
+</html>

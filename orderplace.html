@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place%%order%%now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+      <!-- navigation section -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand fs-2">RAMSONWARE</a>
+            <Button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </Button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto fs-5 fw-normal">
+                    <li class="nav-item ">
+                        <a href="login.html" class="nav-link ">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.cpage.co.tz/" class="nav-link">Printing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">why choose</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Quotes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- form -->
+    <section class="text-light p-5 pt-lg-5">
+        <div class="container align-items-center justify-content-between py-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">Order Placed</h2>
+                    <h5 class="card-subtitle text-success text-sm">Please take Note of your CustomerID and your
+                        Username:</h5>
+                    <p class="lead text-dark py-3"><b>You will use your CustomerID and Username to see your Order</b>
+                    </p>
+                    <form action="index.html" method="post" class="text-dark">
+                        <p class="text-dark">
+                            <b>Some of your Informations:</b>
+                            <br><b>Username: <span class="text-primary">
+                                    <%= lastname%>
+                                </span></b>
+                            <br><b>CustomerID: <span class="text-primary">
+                                    <%=customerID%>
+                                </span></b>
+                            <br><b>Your Location: <span class="text-primary">
+                                    <%=location%>
+                                </span></b>
+                            <br><b>Type of service: <span class="text-primary">
+                                    <%=service%>
+                                </span></b>
+                            <br><b>Phone number: <span class="text-primary">
+                                    <%= phone%>
+                                </span></b>
+                            <br>
+                            <b class="text-success py-3">Dear Valued Customer,</b><br>
+
+                            We wanted to take a moment to express our sincere gratitude for choosing our stationary
+                            services.
+                            At RAMSONWARE, we understand that you have many options when it comes to your needs, and we
+                            are
+                            truly honored that you chose to work with us.
+                        </p>
+                        <p class="text-dark">
+                            Your trust in our services means the world to us. Whether it's printing, binding, scanning,
+                            t-shirt printing, or any other stationary service, we are committed to delivering the
+                            highest quality and personalized care to meet your expectations. We take pride in being a
+                            part of your journey and strive to make each experience with us pleasant and efficient.
+                        </p>
+                         <p>
+                            Our business is built on relationships, and we are grateful for the opportunity to serve
+                            you. We look forward to continuing to provide you with top-notch services and solutions
+                            tailored to your needs.
+                         </p>
+                         <p>
+                            Thank you once again for your support and loyalty. If there's anything we can do to make
+                            your experience even better, please don't hesitate to reach out.
+
+                            <br><b> Warm regards,</b><br>
+
+                            <br><span class="text-primary"><b> The RAMSONWARE Team</b></span> 
+                        </p>
+                        <button class="btn btn-primary btn-lg " required>OK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+
+</html>

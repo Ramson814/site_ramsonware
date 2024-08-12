@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place%%order%%now</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+      <!-- navigation section -->
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand fs-2">RAMSONWARE</a>
+            <Button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </Button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto fs-5 fw-normal">
+                    <li class="nav-item ">
+                        <a href="login.html" class="nav-link ">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.cpage.co.tz/" class="nav-link">Printing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">why choose</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Quotes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- form -->
+    <section class="bg-dark text-light p-5 pt-lg-5">
+        <div class="container align-items-center justify-content-between py-3">
+            <div class="card">
+                <div class="card-body"> 
+                    <h1 class="card-title text-primary">Stationary Services</h1>
+                    <h5 class="card-subtitle text-success text-sm">Fill the information for the Service</h5>
+                    <form class="text-dark">
+                        <div class="mb-3">
+                            <label for="" class="col-form-label ">ID:</label>
+                            <input type="text" class="form-control" id="randomNumber" name="userID" readonly/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" onblur="generateRandomNumber()" autocomplete="off" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Last Name:</label>
+                            <input type="text" class="form-control" autocomplete="off" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Service:</label>
+                            <select class="form-select" required>
+                                <option > </option>
+                                <option >PRINTING</option>
+                                <option >BINDING</option>
+                                <option >SCANNING</option>
+                                <option >PHOTOPRINTING</option>
+                                <option >LAMINATION</option>
+                                <option >T-SHIRT PRINTING</option>
+                                <option >REAM</option>
+                                <option >CAMERA</option>
+                                <option >POSTER</option>
+                                <option >Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Description:</label>
+                            <input type="text" class="form-control" autocomplete="off"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Location:</label>
+                            <select class="form-select" required>
+                                <option > </option>
+                                <option >CIVE</option>
+                                <option >COED</option>
+                                <option >UJASI</option>
+                                <option >TIBA</option>
+                                <option >SOCIAL</option>
+                                <option >HUMANITY</option>
+                                <option >COES</option>
+                                <option >MAKULU</option>
+                                <option >TOWN</option>
+                                <option >IYUMBU</option>
+                                <option >Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Color Choice:</label>
+                            <select class="form-select" required>
+                                <option > </option>
+                                <option >COLORED</option>
+                                <option >BLACK&WHITE</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Number of Copies:</label>
+                            <input type="number" class="form-control" min="1" autocomplete="off"/>
+                        </div>
+                        <button class="btn btn-primary btn-lg ">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    
+<script>
+    function generateRandomNumber() {
+        // Generate a unique six-digit random number
+        var randomNum = Math.floor(100000 + Math.random() * 900000);
+        
+        // Display the generated number
+         document.getElementById("randomNumber").value = randomNum;
+         document.getElementById("randomNumber1").textContent = randomNum;
+    }
+</script>
+
+</html>

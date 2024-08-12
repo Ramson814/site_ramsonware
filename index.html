@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--insert the link of bootstrap cdn for icons -->
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- navigation section -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand fs-2">RAMSONWARE</a>
+            <Button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </Button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto fs-5 fw-normal">
+                    <li class="nav-item ">
+                        <a href="login.html" class="nav-link ">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.cpage.co.tz/" class="nav-link">Printing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#choose" class="nav-link">why choose</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#quotes" class="nav-link">Quotes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ShowCase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Welcome to <span class="text-warning">Ramsonware Company</span> </h1>
+                    <p class="lead my-3">
+                        Welcome to <span class="text-primary">Ramsonware Company</span>, your one-stop destination for a
+                        variety of services tailored to meet your
+                        diverse needs. Whether you're looking for professional stationary services, high-quality grains,
+                        or reliable money transaction solutions, we've got you covered. </p>
+                    <button class="btn btn-primary btn-lg  " data-bs-toggle="modal" data-bs-target="#enroll">
+                        Read More</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/ramsonware.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- NewsLetter -->
+
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Drop Email for Regular Updates</h3>
+                <div class="input-group news-input">
+                    <input type="email" class="form-control" placeholder="Enter Email">
+                    <button class="btn btn-dark btn-lg" type="button" onclick="submitEmail()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md ">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Stationary Services</h3>
+                            <h5 class="card-subtitle text-warning mb-2 ">Rate</h5>
+                            <p class="lead card-text">
+                                At RAMSONWARE, we pride ourselves on offering a comprehensive range of stationary
+                                services designed to cater to both personal and business needs. Our state-of-the-art
+                                equipment and skilled professionals ensure top-notch quality and customer satisfaction.
+                                Our stationary services include: <span class="text-warning"> • Printing</span>: From
+                                business cards to banners<span class="text-warning"> • Binding</span>
+                                <span class="text-warning">, Scanning</span><span class="text-warning"> , T-Shirt
+                                    Printing</span>: Customize your t-shirts with our vibrant and durable printing
+                                services<span class="text-warning"> • Writing Services</span>
+                            </p>
+                            <a href="stationary.html" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md ">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <!-- insert the link of bootstrap cdn for icons -->
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Sale of Grains</h3>
+                            <h5 class="card-subtitle text-warning mb-2 ">Health</h5>
+                            <p class="lead card-text">
+                                At RAMSONWARE, we are committed to providing our customers with the finest quality
+                                grains at competitive prices.We are dedicated to ensuring that you have access to
+                                nutritious and delicious grains for your home or business. Our selection includes: <span
+                                    class="text-warning">• Rice:</span> Sourced from trusted suppliers.
+                                <span class="text-warning text-sm-start">• Maize Flour:</span> Our maize flour is finely
+                                milled and perfect for all your culinary creations.We ensure our grains are stored
+                                safely with quality.
+                            </p>
+                            <a href="grains.html" class="btn btn-dark">Order now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md ">
+                    <div class="card bg-dark text-light">
+
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <!-- insert the link of bootstrap cdn for icons -->
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Money Transactions</h3>
+                            <h5 class="card-subtitle text-warning mb-2 ">Agent</h5>
+                            <p class="lead card-text">
+                                Navigating financial transactions can be challenging, but at RAMSONWARE, we make it easy
+                                and secure. As a trusted money transaction agent.Our experienced agents are here to
+                                assist
+                                you with any financial transactions, ensuring your money is handled with the utmost care
+                                and confidentiality.We offer; <span class="text-warning">• Domestic Transfers</span>:
+                                Quickly and securely transfer money within the country with our efficient services
+                                <span class="text-warning">• Bill Payments</span>: Conveniently pay your bills .
+                            </p>
+                            <button class="btn btn-primary btn-lg  " data-bs-toggle="modal" data-bs-target="#money">
+                                Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="choose" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/stationary2.jpeg"  class="w-100 " alt="" class="img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Why Choose Ramsonware?</h2>
+                    <p class="lead">
+                        <span class="text-primary"><b>• Quality Assurance:</b></span> We are committed to delivering
+                        services of the highest quality.
+                        <br><span class="text-primary"><b>• Customer Satisfaction:</b></span> Our team is dedicated to
+                        ensuring every customer is happy with our
+                        services.
+                        <br><span class="text-primary"><b>• Affordable Pricing:</b></span> Enjoy competitive rates
+                        across all our service offerings.
+                        <br><span class="text-primary"><b>• Trusted Provider:</b></span> With years of experience,
+                        Ramsonwarehas built a reputation for reliability
+                        and excellence.
+                    </p>
+                    <p class="lead">
+                        Visit us today and experience the tongue Ramsonware difference!.<br> <span
+                            class="text-primary"><b>We
+                                always in service</b></span>
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <!-- insert the icon link -->
+                        <i class="bi bi-chevron-right"></i>Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="choose" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Feel the Better!</h2>
+                    <p class="lead">
+                        At Ramsonware, we are committed to providing excellent service and building long-lasting
+                        relationships with our customers. If you have any questions or need more information about
+                        our services, please do not hesitate to contact us. We look forward to serving you!
+
+                    </p>
+                    <p class="lead">
+                        Discover the difference with our premium stationery supplies, experience the freshness and
+                        quality of our grains, Plus, our reliable money transaction services offer peace of mind and
+                        efficiency, making your financial dealings seamless. With Ramsonware, you're not just choosing
+                        services; you're choosing a commitment to excellence. Feel the better today with us. <span
+                            class="text-primary"><b>We
+                                always in service</b></span>
+
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <!-- insert the icon link -->
+                        <i class="bi bi-chevron-right"></i>Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="img/happy.jpeg" class="w-100" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequent Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item--1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                            <b> What types of stationary services are available?</b>
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            We offer a wide range of Stationary services include custom printing such as
+                            documents,business
+                            cards, letterheads, envelopes,brochures, flyers, posters, document binding,
+                            laminating,t-shirt printing, and other office supplies
+                            like pens, notebooks, and ream. Some services also offer graphic design and
+                            personalized stationery.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item--2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                            <b>How can I request a quote for a large printing order? </b>
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            You can request a quote by providing details about your order including quantity, type of
+                            print, and any special requirements. Contact us via phone, email, or our website for an
+                            accurate estimate.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item--3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-three">
+                            <b> Can you scan documents and save them in digital formats?</b>
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Yes, we offer document scanning services and can save your documents in various digital
+                            formats such as PDF or JPEG.
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Item--4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-four">
+                            <b>What should I do if there is an error in my order?</b>
+                        </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Contact the stationary service provider as soon as you notice the error. They will
+                            typically have a process for handling mistakes, which may include reprinting the order
+                            or issuing a refund, depending on the nature of the issue.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item--5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-five">
+                            <b> Are your grains packaged or sold in bulk?</b>
+                        </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            We provide both packaged and bulk options. The packaging details will be specified for
+                            each type of grain.
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Item--6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-six">
+                            <b> How should I store the grains to maintain freshness?</b>
+                        </button>
+                    </h2>
+                    <div id="question-six" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Store grains in a cool, dry place in airtight containers to maintain their freshness
+                            and prevent spoilage.
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Item--7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-seven">
+                            <b> What do I need to bring to make a payment or send money?</b>
+                        </button>
+                    </h2>
+                    <div id="question-seven" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            You’ll need to provide valid identification and details of the payment or transaction.
+                            Ensure you have all necessary information to complete the process smoothly.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item--8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-eight">
+                            <b>How long does it take for a domestic transaction to be completed?</b>
+                        </button>
+                    </h2>
+                    <div id="question-eight" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Domestic transactions are typically processed quickly, often within the same day. However,
+                            processing times can vary, so it’s best to check with us for specific timelines.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our Quotes</h2>
+            <p class="lead text-center text-white mb-5">
+                We have quotes that lived for 5+ years that influenced many people to resonate with the values and goals
+                of your dreams.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt=""
+                                class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">Ramson Mapela</h3>
+                            <p class="card-text">
+                                "In every handwritten note lies the power of personal connection; good stationary is the
+                                bridge that brings words to life"
+                            </p>
+                            <a href="https://mail.google.com/mail/u/0/#inbox"><i
+                                    class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/ramadhani.mapela.5"><i
+                                    class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/ramsonware"><i
+                                    class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt=""
+                                class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">Neema Mapela</h3>
+                            <p class="card-text">
+                                "Stationary is more than paper and ink; it's the art of communication, where each stroke
+                                and texture tells a unique story"
+                            </p>
+                            <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt=""
+                                class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">Leonard Mapela</h3>
+                            <p class="card-text">
+                                "The legacy of grains is woven into the fabric of human civilization, supporting life
+                                and
+                                growth with every harvest and every meal"
+                            </p>
+                            <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/15.jpg" alt=""
+                                class="rounded-circle mb-3" />
+                            <h3 class="card-title mb-3">Paulinah Mapela</h3>
+                            <p class="card-text">
+                                "Money transactions are the lifeblood of commerce; they require precision and honesty to
+                                ensure fairness and foster lasting relationships"
+                            </p>
+                            <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> Benjamin Mkapa road,Iyumbu,Dodoma
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone Number:</span> +255 752 046 268
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email :</span> weeperrm@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Sms/Whatsapp:</span> +255 752 046 268
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy: 2024 ramsonwarecompany</p>
+            <a href="" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade " id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-scrollable"><!-- .modal-lg -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enroll">Ramsonware Company</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <p class="lead"><b>Discover Our Stationary Services</b> </p>
+                    <p>
+                        At Ramsonware, we pride ourselves on offering comprehensive stationary services that cater to
+                        both individuals and businesses. Our state-of-the-art printing solutions ensure your documents
+                        are printed with precision and clarity. We also provide binding services to give your reports
+                        and presentations a polished and professional look. Our team is dedicated to helping you with
+                        all your stationary needs, from simple photocopying to custom t-shirt printing, ensuring you
+                        have the tools you need to succeed.
+                    </p>
+                    <p class="lead"><b>Explore Our High-Quality Grains</b> </p>
+                    <p>
+                        In addition to our stationary services, we offer a selection of high-quality grains. Our grains
+                        are sourced from trusted suppliers, guaranteeing freshness and nutritional value. Whether you're
+                        buying rice or maize flour, you can trust Ramsonware to deliver quality products that contribute
+                        to healthy and delicious meals. Our commitment to quality ensures that you always receive the
+                        best, whether for personal use or for your business.
+                    </p>
+                    <p class="lead"><b>Reliable Money Transaction Solutions</b> </p>
+                    <p>
+                        Ramsonware Company also provides secure and efficient money transaction services. As a trusted
+                        agent, we offer a range of financial solutions to meet your needs, including money transfers and
+                        bill payments. Our user-friendly services are designed to be convenient and reliable, making it
+                        easy for you to manage your finances with peace of mind.
+                    </p>
+                    <p class="lead"><b>Our Commitment to You</b> </p>
+                    <p>
+                        At Ramsonware, customer satisfaction is at the heart of everything we do. We strive to provide
+                        exceptional service across all our offerings, ensuring that your experience with us is seamless
+                        and rewarding. Our knowledgeable staff is always ready to assist you with any questions or
+                        requests, ensuring you receive personalized attention and support. <br><b
+                            class="text-dark">Contact: <span class="text-primary"> +255 752 046 268</span></b>
+                            <br><b
+                            class="text-dark">Email: <span class="text-primary"> weeperrm@gmail.com</span></b>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="money" tabindex="-1" aria-labelledby="moneylLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="money">Ramsonware Money Transactions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Elevate Your Financial Transactions with Us!</p>
+                    <p>
+                        At Ramsonware, we specialize in providing seamless and secure money transaction
+                        services.
+                        Whether you need to send money, receive funds, or handle various financial needs, our
+                        professional team is here
+                        to ensure your transactions are swift and hassle-free. Trust us for reliable service and expert
+                        assistance
+                        every step of the way.<br> Visit us at <span class="text-primary">UJASI-NGONGONAH</span> or
+                        <span class="text-primary">CIVE</span> for unparalleled service. Reach out to us today at
+                        <span class="text-primary">0752046268</span>. for more information.
+                    </p>
+                    <p class="lead">Experience Excellence in Money Transactions!</p>
+                    <p>
+                        We are committed to offering top-notch money transaction services
+                        designed to meet all your financial needs with efficiency and security. Our dedicated team is
+                        here to provide you with personalized service to make every transaction smooth and effortless.
+                        Drop by our offices at <span class="text-primary">UJASI-NGONGONAH</span> or
+                        <span class="text-primary">CIVE</span>, and let us handle your financial transactions
+                        with care.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+        function validateEmail(email) {
+            const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        function submitEmail() {
+            const emailInput = document.querySelector('input[type="email"]');
+            const email = emailInput.value;
+
+            if (!validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            // Proceed to submit email
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "submit_email.jsp", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    alert("Email submitted successfully!");
+                    emailInput.value = ''; // Clear the input
+                }
+            };
+
+            xhr.send("email=" + encodeURIComponent(email));
+        }
+    </script>
+
+
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmFtc29uLTgxNCIsImEiOiJjbHppdnRlNWwwa2Y3MmtzMTRnaDAxbm0wIn0.Zoz15bC-66XF9LWAGZmbrw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            //center: [-71.060982, 42.35725],
+            center: [-6.776012, 39.178326],
+            zoom: 18,
+        }
+        );
+    </script>
+</body>
+
+</html>
